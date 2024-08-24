@@ -99,7 +99,7 @@ export default function Home() {
                   value={length}
                   min="0"
                   onChange={handleLengthChange}
-                  className="mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="text-center mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
               <div className="flex flex-col justify-center items-center">
@@ -111,7 +111,7 @@ export default function Home() {
                   value={height}
                   min="0"
                   onChange={handleHeightChange}
-                  className="mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="text-center mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
               <div className="flex flex-col justify-center items-center">
@@ -123,7 +123,7 @@ export default function Home() {
                   value={thickness}
                   min="0"
                   onChange={handleThicknessChange}
-                  className="mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="text-center mt-1 block w-2/4 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -162,8 +162,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {cases.slice(0, visibleCount).map((caseItem, index) => {
-              //const imagelocation1 = `/images/${caseItem.image_id}/1.jpg`;
-              const imagelocation1 = `https://github.com/MariooY2/Redditfreelance4/blob/main/public/images/${caseItem.image_id}/1.jpg?raw=true`;
+              const imagelocation1 = `/images/${caseItem.image_id}/1.jpg`;
+              //const imagelocation1 = `https://github.com/MariooY2/Redditfreelance4/blob/main/public/images/${caseItem.image_id}/1.jpg?raw=true`;
               return (
                 <div
                   key={index}
