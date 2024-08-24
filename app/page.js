@@ -54,7 +54,7 @@ export default function Home() {
 
   const handleGpuSelection = (gpuItem) => {
     // Set the selected GPU and update dimensions
-    setSearchtext(gpuItem.title);
+    setSearchText(gpuItem.GPU)
     setSelectedGpu(gpuItem.GPU);
     setLength(gpuItem.length); // Assuming `length` is a property of the GPU
     setHeight(gpuItem.height); // Assuming `height` is a property of the GPU
